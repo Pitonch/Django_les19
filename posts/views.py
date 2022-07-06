@@ -15,3 +15,7 @@ def posts(request):
 
 def about(request):
     return render(request, 'about.html', {'content': '<h1>About</h1>'})
+
+
+def info(request):
+    return render(request, 'about.html', {'content': '<h1>_I_N_F_O_</h1>'})
