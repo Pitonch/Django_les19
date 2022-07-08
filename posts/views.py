@@ -8,9 +8,13 @@ def home(request):
     return render(request, 'base.html')
 
 
-def posts(request):
-    post_content = request.headers
-    return render(request, 'posts.html', {'content': post_content})
+def posts(request, post_id):
+    #print(post_id)
+    # post_content = request.headers
+    # return render(request, 'posts.html', {'content': post_content})
+    # if request.method == "GET":
+    #     print((request.GET))
+    return render(request, 'posts.html', {'content': request.GET})
 
 
 def about(request):
